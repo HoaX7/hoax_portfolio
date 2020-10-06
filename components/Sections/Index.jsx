@@ -4,7 +4,7 @@ import Auth from "../../helpers/auth";
 export default function Home({ profile, setEdit }) {
   const socialmedia = Object.values(profile.socialmedia);
   return (
-    <div className="profile_content">
+    <div className="profile_content" id="home">
       {Auth.isLoggedIn() && <div className="mx-2 mb-3">
         <img src="/static/images/edit.svg" className="ptr" onClick={() => setEdit(true)} width="24px" alt="" />
       </div>}

@@ -23,12 +23,28 @@
 .btn-light:hover {
     border: 1px solid var(--bg-dark);
 }
+.skills {
+    background-color: #000000;
+}
+.skill_card {
+    color: #ffffff !important;
+    background-color: #1b1919 !important;
+    transition: transform .5s ease;
+}
 div {
     font-size: inherit;
     font-family: inherit;
 }
 .profile_info {
     font-size: 16px;
+}
+.card-body {
+    height: 250px;
+}
+.card-footer {
+    position:absolute;
+    bottom:0;
+    right: 0;
 }
 .profile {
     width: 900px;
@@ -135,14 +151,17 @@ textarea {
     height: 250px !important;
 }
 .card {
-    min-height: 250px;
-    transition: transform .5s ease;
+    max-height: 350px;
+    border: none;
 }
-.card:hover {
+.skill_card:hover {
     transform: scale(1.1);
 }
 .p_footer {
     font-size: 16px;
+}
+.p_card {
+    height: 270px;
 }
 .truncated {
     overflow: hidden;
@@ -180,6 +199,9 @@ textarea {
     width: 400px;
     font-size: 16px;
 }
+.contact_title {
+    color: #6c757d;
+}
 .no-anchor {
     color: inherit;
     text-decoration: none;
@@ -187,4 +209,32 @@ textarea {
 .no-anchor:hover {
     color: inherit;
     text-decoration: none;
+}
+.overlay-right, .overlay-left {
+    position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #1b1919;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.overlay-left {
+    left: 0 !important;
+}
+.overlay_container:hover .overlay-right {
+    width: 100%;
+    left: 0;
+}
+.overlay_container:hover .overlay-left {
+    width: 100%;
+}
+.overlay_content {
+    color: #ffffff;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* white-space: nowrap; */
 }

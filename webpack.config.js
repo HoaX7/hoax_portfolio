@@ -10,6 +10,14 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx"]
     },
+    devServer: {
+        contentBase: './public',
+        compress: true,
+        hot: true,
+        port: 3000,
+        publicPath: '/',
+    
+      },
     module: {
         rules: [
             {

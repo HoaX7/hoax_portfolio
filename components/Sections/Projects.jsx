@@ -8,7 +8,7 @@ export default function Projects({ details }) {
         <div className="row">
             {details && details.details.projects && details.details.projects.map((project, i) => {
                 return (
-                    <div key={i} className="col-12 col-md-4 p-3">
+                    <div key={i} className="col-12 col-md-6 p-3">
                         <Cards item={project} isPersonalProject={true} />
                     </div>
                 )

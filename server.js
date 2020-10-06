@@ -5,7 +5,6 @@ const express = require("express"),
     cookieParser = require("cookie-parser"),
     port = process.env.port || 3000,
     mongoose = require("mongoose");
-
 server.use(express.json());
 server.use(cookieParser());
 server.use(express.static("public"));
